@@ -35,6 +35,24 @@
       background-color: transparent;
     }
 
+    /* Dropdown menu styling */
+    .dropdown-menu {
+      border: none;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .dropdown-item {
+      color: #000;
+      padding: 0.5rem 1.5rem;
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    .dropdown-item:hover {
+      color: #81D8D0;
+      background-color: #f8f9fa;
+    }
+
     .carousel-inner {
       background-color: #f8f9fa;
       padding-top: 1rem;
@@ -78,7 +96,7 @@
 </head>
 <body>
 
-  <!-- Navbar exactly as in original -->
+  <!-- Updated Navbar with dropdown -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-3">
     <div class="container-fluid px-4">
       <a class="navbar-brand brand-name" href="index.html">Tiffany & Co.</a>
@@ -96,7 +114,16 @@
             <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link text-dark" href="cards.html">Cards</a></li>
             <li class="nav-item"><a class="nav-link text-dark" href="carousel.html">Carousel</a></li>
-            <li class="nav-item"><a class="nav-link text-dark" href="grid.html">Grid Challenges</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Grid Challenges
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="grid.html">Challenge 1</a></li>
+                <li><a class="dropdown-item" href="grid.html#challenge2">Challenge 2</a></li>
+                <li><a class="dropdown-item" href="grid.html#challenge3">Challenge 3</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
