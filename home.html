@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -110,6 +110,24 @@
       color: #81D8D0 !important; /* Blue color on hover */
     }
 
+    /* Dropdown menu styling */
+    .dropdown-menu {
+      border: none;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .dropdown-item {
+      color: #000;
+      padding: 0.5rem 1.5rem;
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    .dropdown-item:hover {
+      color: #81D8D0;
+      background-color: #f8f9fa;
+    }
+
     /* Improve Navbar Responsiveness */
     @media (max-width: 767px) {
       .navbar-nav {
@@ -128,31 +146,13 @@
     .navbar-toggler-icon {
       background-color: #000;
     }
-
-    /* Dropdown menu styling */
-    .dropdown-menu {
-      border: none;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-    }
-
-    .dropdown-item {
-      color: #000;
-      padding: 0.5rem 1.5rem;
-      transition: color 0.3s ease, background-color 0.3s ease;
-    }
-
-    .dropdown-item:hover {
-      color: #81D8D0;
-      background-color: #f8f9fa;
-    }
   </style>
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-3">
     <div class="container-fluid px-4">
       <a class="navbar-brand brand-name" href="index.html">Tiffany & Co.</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-label="Toggle navigation">
@@ -170,13 +170,13 @@
             <li class="nav-item"><a class="nav-link text-dark" href="cards.html">Cards</a></li>
             <li class="nav-item"><a class="nav-link text-dark" href="carousel.html">Carousel</a></li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="gridDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Grid Challenges
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="grid.html">Challenge 1</a></li>
-                <li><a class="dropdown-item" href="grid.html#challenge2">Challenge 2</a></li>
-                <li><a class="dropdown-item" href="grid.html#challenge3">Challenge 3</a></li>
+              <ul class="dropdown-menu" aria-labelledby="gridDropdown">
+                <li><a class="dropdown-item" href="patterns/page1.html">Challenge 1</a></li>
+                <li><a class="dropdown-item" href="patterns/page2.html">Challenge 2</a></li>
+                <li><a class="dropdown-item" href="patterns/page3.html">Challenge 3</a></li>
               </ul>
             </li>
           </ul>
