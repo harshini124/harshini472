@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/*CSS Document*/
+
+html body {
+  background-color: rgba(230, 230, 230, 1);
+  /* Gray is definitely easier on the eyes for me */
+}
+.yellow-col {
+  background-color: yellow;
+  color: black;
+}
+
+.baby-pink-col {
+  background-color: #FFC0CB; /* Baby pink color */
+  color: black;
+}
+
+.blue-col {
+  background-color: #0000FF; /* Blue color */
+  color: white; /* White text for better contrast */
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bg-body-tertiary {
+  background-color: rgb(0, 15, 90) !important;
+}
+
+.nav-link {
+  color: ivory !important;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: rgb(247, 235, 160) !important;
+}
+
+.navbar-brand {
+  color: ivory !important;
+  text-decoration: none;
+}
+
+.active {
+  color: rgb(212, 219, 5) !important;
+}
+
+.navbar-toggler{
+  filter: invert(100%);
+}
+
+h1 {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 400;
+}
+
+/* footer */
+.footer-ap {
+  color: black;
+  text-align: center;
+  background-color: rgba(0, 15, 90, 0.2);
+}
+
+.btn-primary {
+  background-color: rgb(255, 173, 111);
+  color: black;
+  border-color: rgb(255, 173, 111);
+}
+
+.btn-primary:hover {
+  background-color: rgb(255, 135, 36);
+  color: black;
+  border: 1px dashed;
+  font-size: 1.5em;
+}
+
+.carousel-padding{
+  padding-left: 125px;
+  padding-right: 125px;
+  color: black;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}

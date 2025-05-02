@@ -1,0 +1,121 @@
+<!doctype html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harshini Bootstrap Homework - Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="../css/homework.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Harshini</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carousel.html">Carousel</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Grid Challenges
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../gridChallenge/gridChallenge1.html">Grid Challenge 1</a></li>
+                <li><a class="dropdown-item" href="../gridChallenge/gridChallenge2.html">Grid Challenge 2</a></li>
+                <li><a class="dropdown-item" href="../gridChallenge/gridChallenge3.html">Grid Challenge 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-lg">
+      <div class="row pt-3">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <h1>Tiffany's Icons of Elegance</h1>
+          <h2>Jewels that Transcend Time</h2>
+          <p>
+            Discover the enduring allure of Tiffany & Co., where timeless craftsmanship meets exquisite design and artistic brilliance. Each signature piece is a masterwork, carefully handcrafted to reflect a legacy of excellence that spans generations. From the iconic Tiffany Setting engagement ring to contemporary creations that redefine elegance, Tiffany & Co. celebrates the essence of love, heritage, and refined sophistication.
+          </p>
+        </div>
+      </div>
+
+      <div class="row pt-2 pb-2">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-12 py-2">
+          <div class="card h-100 shadow">
+            <img src="https://www.fashionela.net/wp-content/uploads/2020/04/Tiffany-Co-T1-2020_Fashionela-2.jpg" class="card-img-top" alt="Tiffany T1 Collection">
+            <div class="card-body">
+              <h3 class="card-title">T1 Collection</h3>
+              <p class="card-text">The Tiffany T1 Collection is a bold reimagining of Tiffany's iconic 'T' motif. Designed for everyday elegance, it represents individual strength and self-expression.</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Jewellery1">Modal</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-12 py-2">
+          <div class="card h-100 shadow">
+            <img src="https://media.tiffany.com/is/image/tiffanydm/PLP_2x2MktgTile_ChainNecklaces?$tile$&wid=1488&hei=1488&defaultImage=NoImageAvailableInternal&fmt=webp" class="card-img-top" alt="Tiffany Chain Collection">
+            <div class="card-body">
+              <h3 class="card-title">Chain Necklaces</h3>
+              <p class="card-text">Tiffany Chain Necklaces are expressions of boldness, character, and style with sophistication.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-12 py-2">
+          <div class="card h-100 shadow">
+            <img src="https://media.tiffany.cn/is/image/tiffanydm/HW-2x2MktgTile4?$tile$&wid=1488&hei=1488" class="card-img-top" alt="Tiffany High Jewellery">
+            <div class="card-body">
+              <h3 class="card-title">High Jewellery</h3>
+              <p class="card-text">Tiffany's High Jewellery pieces are crafted with rare and exceptional gemstones, often one-of-a-kind. Featuring legacy stones like the legendary yellow diamond and peerless sapphires, emeralds, and rubies.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- Row -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="Jewellery1" tabindex="-1" aria-labelledby="Jewellery1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="Jewellery1Label">Tiffany & Co. – Mother's Day Tribute</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="https://i.pinimg.com/originals/d7/89/0b/d7890ba90cbae130d31c4eece193e9d7.gif" alt="Mother's Day Tribute GIF" class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-ap py-3 mx-3 border-top border-3">
+      &copy; Harshini Thakur | 2025 | Assignment April 2025 |
+      eMail = <a href="mailto:hthakur2@depaul.edu">hthakur2@depaul.edu</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
